@@ -1,0 +1,24 @@
+#sinal{
+    height: 10px;
+    width: 324px;
+    background-color:#444;
+}
+
+.farol{
+    width: 106px;
+    height: 8px;
+    margin: 1px;
+    float: left;
+}
+
+.heroi{
+    background-color: darkorange;
+}
+
+.agressor{
+    background-color:deeppink;
+}
+
+.vez{
+    background-color: greenyellow;
+}

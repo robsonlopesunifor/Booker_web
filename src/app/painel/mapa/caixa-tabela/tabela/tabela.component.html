@@ -1,0 +1,5 @@
+    <ul id="tabela" >
+        <li class="holecards" *ngFor="let holeCard of tabela" > 
+          <app-holecards [holeCard]="holeCard" [confronto]="confronto" combo-heroi="combo_heroi" ></app-holecards>
+        </li>
+    </ul>

@@ -1,0 +1,16 @@
+<div id="menu-top" >
+    <div id="data" >
+        <input type="text" class="caixa-media" [(ngModel)]="data.ano" >
+        <input type="text" class="caixa-curta" [(ngModel)]="data.mes" >
+        <input type="text" class="caixa-curta" [(ngModel)]="data.dia" >
+        <div class="caixa-media" (click)="definirData()" >data</div>
+    </div>
+    <div id="tela" >
+        <div class="caixa-media botao" (click)="listarTelasDaData()" >tela</div>
+        <div *ngFor="let tela of telas" class="caixa-curta" >{{tela}}</div>
+    </div>
+    <div id="informacoes" >
+        <div class="caixa-larga" >total de mesas</div>
+        <div class="caixa-media" >123</div>
+    </div>
+</div>

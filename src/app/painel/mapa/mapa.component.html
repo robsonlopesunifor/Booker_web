@@ -1,0 +1,23 @@
+<div class="corpo" >
+    <div class="top">
+        <app-caixa-cabecario 
+            [tela]="tela" 
+            [data]="data" 
+            (enviar)="carregarFichario($event)" ></app-caixa-cabecario>
+    </div>
+    <div class="board_tabelas" >
+        <app-caixa-lateral  
+            [board]="board" 
+            [estilo]="estilo" 
+            (enviar)="alterarEstilo($event)"
+            [style.float]="estilo.espelhar ? 'right' : 'left'" ></app-caixa-lateral>
+        <div id="lista_de_tabelas" 
+            [style.float]="estilo.espelhar ? 'right' : 'left'" >
+            <ul>
+                <li *ngFor="let tabela of tabelas" [style.float]="estilo.espelhar ? 'right' : 'left'" >
+                    <app-caixa-tabela [tabela]="tabela" [estilo]="estilo" ></app-caixa-tabela>
+                </li>
+            </ul>
+        <div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+#board{
+    height: 326px;
+    width: 101px;
+    background-color: rgb(128, 123, 123);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#board li{
+    margin: 1px 0 0 1px;
+    float: left;
+}

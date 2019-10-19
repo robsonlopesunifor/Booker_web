@@ -1,0 +1,14 @@
+#corpo{
+    width: 101px;
+    height: 450px;
+    background-color: #5A5151;
+    padding: 3px;
+}
+
+app-board{
+    margin-top: 3px;
+}
+
+app-estilo{
+    margin-top: 2px;
+}

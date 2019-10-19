@@ -1,0 +1,53 @@
+div{
+    width: 24px;
+    height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.carta_indisponivel{
+    background-color: #555;
+    color: #666;
+}
+
+.carta_padrao_p{
+    background-color: #666;
+    color: #5DBA15;
+}
+
+.carta_board_p{
+    background-color: #5DBA15;
+    color: #666;
+}
+
+.carta_padrao_c{
+    background-color: #666;
+    color: #F3436D;
+}
+
+.carta_board_c{
+    background-color: #F3436D;
+    color: #666;
+}
+
+.carta_padrao_o{
+    background-color: #666;
+    color: #E4973D;
+}
+
+.carta_board_o{
+    background-color: #E4973D;
+    color: #666;
+}
+
+.carta_padrao_e{
+    background-color: #666;
+    color: #40ABE0;
+}
+
+.carta_board_e{
+    background-color: #40ABE0;
+    color: #666;
+}

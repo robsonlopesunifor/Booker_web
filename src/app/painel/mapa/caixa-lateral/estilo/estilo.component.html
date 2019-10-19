@@ -1,0 +1,17 @@
+<div id="estilo" >
+    <div class="chave" 
+        [style.background-color]="estilo.so_tabela_heroi ? '#999' : '#444'"
+        (click)="alterarEstilo('so_tabela_heroi')" >
+        H / Vs + H
+    </div>
+    <div class="chave" 
+        [style.background-color]="estilo.editar_confronto ? '#999' : '#444'"
+        (click)="alterarEstilo('editar_confronto')" >
+        editar conf
+    </div>
+    <div class="chave" 
+        [style.background-color]="estilo.espelhar ? '#999' : '#444'"
+        (click)="alterarEstilo('espelhar')" >
+        espelhar
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<ul id="historico" >
+    <li>
+        <div class="etapa" >
+            pre-flop
+        </div>
+        <div class="jogadas" >
+            <app-jogada 
+             *ngFor="let jogada of historico.PRE_FLOP" 
+             [jogada]="jogada" ></app-jogada>
+        </div>
+    </li>
+    <li>
+        <div class="etapa" >
+            flop
+        </div>
+        <div class="jogadas" >
+            <app-jogada 
+            *ngFor="let jogada of historico.FLOP" 
+            [jogada]="jogada" ></app-jogada>
+        </div>
+    </li>
+    <li>
+        <div class="etapa" >
+            turn
+        </div>
+        <div class="jogadas" >
+            <app-jogada 
+             *ngFor="let jogada of historico.TURN" 
+             [jogada]="jogada" ></app-jogada>
+        </div>
+    </li>
+    <li>
+        <div class="etapa" >
+            river
+        </div>
+        <div class="jogadas" >
+            <app-jogada 
+             *ngFor="let jogada of historico.RIVER" 
+             [jogada]="jogada" ></app-jogada>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,12 @@
+#tabela{
+    width: 316px;
+    height: 316px;
+    background-color: #756d6d;
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+}
+
+.holecards{
+    float: left;
+}

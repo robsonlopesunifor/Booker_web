@@ -1,0 +1,9 @@
+#painel{
+    width: 100%;
+    height: 1100px;
+    background-color: darkgrey;
+}
+
+.caixa{
+    float: left;
+}

@@ -1,0 +1,17 @@
+#estilo{
+    height: 124px;
+    width: 101px;
+    background-color: rgb(105, 97, 97);
+}
+
+.chave{
+    width: 98px;
+    height: 15px;
+    background-color: #555;
+    margin: 1px;
+    color: honeydew;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}

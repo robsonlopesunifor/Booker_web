@@ -1,0 +1,56 @@
+<div class="corpo" >
+    <div class="menu_item" id="data_botao" (click)="totalDeJogadasPorMaos()" >data</div>
+    <div class="menu_item" >
+        <input type="text" class="data" value="{{cordenadas.data.ano}}" >
+        <input type="text" class="data" value="{{cordenadas.data.mes}}" >
+        <input type="text" class="data" value="{{cordenadas.data.dia}}" >
+    </div>
+    <div class="menu_item" >
+        <div id="tela" >tela</div>
+        <ul id="tela_item">
+            <li *ngFor="let tela of cordenadas.telas.itens" (click)="definir_tela(tela)" >{{tela}}</li>
+        </ul>
+    </div>
+    <div id="timeline" >
+        <div id="mover" >
+            <div class="mover_btns">
+                <div class="mover_seta" (click)="mover('jogadas','baixo')" ><</div>
+                <div class="mover_valor" ></div>
+                <div class="mover_seta" (click)="mover('jogadas','cima')" >></div>
+            </div>
+            <div class="mover_btns">
+                <div class="mover_seta" (click)="mover('maos','baixo')" ><</div>
+                <div class="mover_valor" ></div>
+                <div class="mover_seta" (click)="mover('maos','cima')" >></div>
+            </div>
+        </div>
+        <div id="colunas" >
+            <ul class="coluna" >
+                <li *ngFor="let jogada of cordenadas.jogadas.itens" >
+                    <div class="chave jogada" 
+                        [style.background-color]="jogada.atual ? '#C6C3C2' : '#837978'"
+                        (click)="enviar_cordenadas('jogadas',jogada.valor)" >
+                        {{jogada.valor}}
+                    </div>
+                    <div class="selecionado jogada"
+                        (click)="selecionar('jogadas',jogada.valor)"
+                        [style.background-color]="jogada.selecionado ? '#F3436D' : '#67605F'" ></div>
+                </li>
+            </ul>
+            <ul class="coluna" >
+                <li *ngFor="let mao of cordenadas.maos.itens" >
+                    <div class="selecionado" 
+                        (click)="selecionar('maos',mao.valor)"
+                        [style.background-color]="mao.selecionado ? '#F3436D' : '#67605F'" ></div>
+                    <div class="chave" 
+                        [style.background-color]="mao.atual ? '#C6C3C2' : '#837978'"
+                        (click)="enviar_cordenadas('maos',mao.valor)" >
+                        {{mao.valor}}
+                    </div>
+                </li>                
+            </ul>
+        </div>
+        <div id="largura" ></div>
+    </div>
+    
+</div>

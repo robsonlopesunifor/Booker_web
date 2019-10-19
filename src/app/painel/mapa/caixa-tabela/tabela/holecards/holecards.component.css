@@ -1,0 +1,22 @@
+.holecards{
+    width: 17px;
+    height: 15px;
+    padding-top: 2px;
+    float: left;
+    margin: 1px 0 0 1px;
+    list-style: none;
+    background-color: #7D7676;
+
+    border:#7d7676 3px solid; 
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: 'rgb(211, 202, 202)';
+    
+
+    cursor: pointer;
+}

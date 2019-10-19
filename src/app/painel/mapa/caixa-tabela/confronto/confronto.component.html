@@ -1,0 +1,20 @@
+<div id="corpo" >
+    <ul id="posicoes" class="lista" >
+        <li *ngFor="let posicao of posicoes"
+            (click)="alterarConfronto(posicao)"  
+            [style.background-color]="estilo_das_posicoes[posicao]" >
+            {{posicao}}
+        </li>
+    </ul>
+    <ul id="acoes" class="lista" >
+        <li (click)="alterarAcao('F')" id="F" >FOLD</li>
+        <li (click)="alterarAcao('R')" id="R" >OR</li>
+        <li (click)="alterarAcao('RC')" id="RC" >CALL</li>
+        <li (click)="alterarAcao('RR')" id="RR" >3BET</li>
+        <li (click)="alterarAcao('RRC')" id="RRC" >CALL</li>
+        <li (click)="alterarAcao('RRR')" id="RRR" >4BET</li>
+    </ul>
+    <div class="estilo" >padrao</div>
+    <div class="protagonista" >heroi</div>
+    <div class="protagonista" >vilao</div>
+</div>

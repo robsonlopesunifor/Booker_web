@@ -1,0 +1,76 @@
+#corpo{
+    height: 55px;
+    width: 324px;
+    background-color: #A6A6A6;
+    text-align: center;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    
+}
+.lista{
+    height: 17px;
+    width: 324px;
+    background-color: rgb(151, 150, 150);
+    margin-top:1px;
+    margin-bottom: 1px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.lista li{
+    float: left;
+    width: 52px;
+    height: 14px;
+    padding-top: 3px;
+    background-color: #89C7E5;
+    margin: 1px;
+    cursor: pointer;
+}
+
+
+#F{
+    background-color: #CFCDCD;
+}
+
+#R{
+    background-color: #5DBA15;
+}
+
+#RC{
+    background-color:#89C7E5;
+}
+
+#RR{
+    background-color:#E4973D;
+}
+
+#RRC{
+    background-color:#0500FF;
+}
+
+#RRR{
+    background-color:#F3436D;
+}
+
+.estilo{
+    float: left;
+    width: 106px;
+    height: 13px;
+    padding-top: 1px;
+    background-color: rgb(102, 108, 110);
+    margin: 1px;
+    cursor: pointer;
+}
+
+.protagonista{
+    float: left;
+    width: 106px;
+    height: 13px;
+    padding-top: 1px;
+    background-color: rgb(140, 144, 146);
+    margin: 1px;
+    cursor: pointer;
+}

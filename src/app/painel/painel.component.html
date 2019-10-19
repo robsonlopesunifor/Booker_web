@@ -1,0 +1,7 @@
+<div class="caixa" >
+    <app-menu-top (enviar_data)="atualizarData($event)" ></app-menu-top>
+    <app-mapa [cordenadas]="cordenadas"  ></app-mapa>
+</div>
+<div class="caixa" >
+    <app-timeline (enviar)="alterarCordenadas($event)" ></app-timeline>
+</div>
