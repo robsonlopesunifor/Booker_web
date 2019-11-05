@@ -1,0 +1,38 @@
+#linha{
+    height: 29px;
+    width: 1100px;
+    background-color: #464646;
+    margin-bottom: 1px;
+}
+
+#board{
+    height: 29px;
+    background-color: cadetblue;
+    float: left;
+}
+
+#jogadas{
+    height: 29px;
+    background-color: chocolate;
+    float: left;
+}
+
+#analize{
+    height: 29px;
+    background-color: cadetblue;
+    float: left;
+}
+
+.altura_1{
+    height: 15px;
+    overflow: hidden;
+}
+
+.altura_2{
+    height: 14px;
+    overflow: hidden;
+}
+
+.celula{
+    float: left;
+}

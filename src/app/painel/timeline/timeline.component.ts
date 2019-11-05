@@ -13,7 +13,7 @@ export class TimelineComponent implements OnInit {
   private selecionados:Object = {}
   private cordenadas:Object = {
     telas:{itens:[0,1,2,3],atual:0},
-    data:{ano:2019,mes:10,dia:5},
+    data:{ano:2019,mes:11,dia:2},
     maos:{
           total:0,
           itens:[],
@@ -53,7 +53,7 @@ export class TimelineComponent implements OnInit {
 
   preencher(agente:string):void{
     this.cordenadas[agente]['itens'] = []
-    for(var _i = 1; _i <= this.cordenadas[agente]['total'];_i++){
+    for(var _i = 0; _i < this.cordenadas[agente]['total'];_i++){
       var partida = this.cordenadas[agente]['pivo'] * this.cordenadas[agente]['salto'] 
       var chegada = partida + this.cordenadas[agente]['faixa']
       var atual = false
@@ -136,7 +136,7 @@ export class TimelineComponent implements OnInit {
       delete this.selecionados[mao]
     }else{
       this.selecionados[mao] = []
-      for(var jogada = 1; jogada <= this.jogada_por_mao[mao][1]; jogada++)
+      for(var jogada = 0; jogada < this.jogada_por_mao[mao][1]; jogada++)
         this.selecionados[mao].push(jogada)
     }
   }
@@ -153,12 +153,27 @@ export class TimelineComponent implements OnInit {
           this.selecionados[mao] = []
         this.selecionados[mao].push(jogada)
     }
+
   }
 
   deletar_item(myArray,valor){
     const index = myArray.indexOf(valor, 0);
     if (index > -1)
         myArray.splice(index, 1);
+  }
+
+  reanalizarMaos(){
+    var lista_maos:string[] = []
+    var lista_chaves = Object.keys(this.selecionados)
+    for(let chaves of  lista_chaves){
+      var mao = this.jogada_por_mao[chaves][0]
+      lista_maos.push(mao)
+    }
+    console.log(lista_maos)
+    this.TimelineService.reanalizarMaos(lista_maos)
+                        .subscribe((resposta) => {
+                          this.totalDeJogadasPorMaos()
+                        });
   }
 
   ngOnInit() {

@@ -1,7 +1,18 @@
-<div class="caixa" >
-    <app-menu-top (enviar_data)="atualizarData($event)" ></app-menu-top>
-    <app-mapa [cordenadas]="cordenadas"  ></app-mapa>
+<div id="caixa">
+<div id="caixa_interna" >
+<div id="caixa_painel" [style.width]="foto ? '1000px' : '580px'" >
+    <app-menu-top (enviar_dados)="definirPainel($event)" ></app-menu-top>
+    <div id="painel" [ngSwitch]="painel_atual" >
+        <app-mapa *ngSwitchCase="'mapa'" [cordenadas]="cordenadas"  ></app-mapa>
+        <app-planilha *ngSwitchCase="'planilha'" [cordenadas]="cordenadas"  ></app-planilha>
+    </div>
+    
 </div>
-<div class="caixa" >
+<div id="caixa_timeline" >
     <app-timeline (enviar)="alterarCordenadas($event)" ></app-timeline>
+</div>
+<div id="caixa_foto" >
+    <app-foto [cordenadas]="cordenadas" ></app-foto>
+</div>
+</div>
 </div>

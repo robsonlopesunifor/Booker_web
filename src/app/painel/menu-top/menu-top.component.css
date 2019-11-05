@@ -1,69 +1,24 @@
 #menu-top{
-    height: 36px;
+    height: 21px;
     width: 1100px;
+    padding:4px 0 0 4px;
     background-color: #382C2C;
     text-align: center;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-#data{
-    height:26px;
-    margin:5px;
-    float:left;
-}
 
-#tela{
-    height:26px;
-    margin:5px;
-    float:left;
-    margin-left:30px;
-}
-
-#informacoes{
-    height:26px;
-    margin:5px;
-    float:left;
-    margin-left:30px;
-}
-
-.caixa-larga{
-    height:21px;
+.botao{
+    height:15px;
     width:100px;
     background-color: #858282;
     float:left;
     margin-left:1px;
-    padding-top:5px;
+    padding-top:2px;
     text-align: center;
     color: #FFF;
     style:none;
-}
-
-.caixa-media{
-    height:21px;
-    width:50px;
-    background-color: #858282;
-    float:left;
-    margin-left:1px;
-    padding:5px 0 0 0;
-    text-align: center;
-    color: #FFF;
-    border: none;
-}
-
-.caixa-curta{
-    height:21px;
-    width:25px;
-    background-color: #858282;
-    float:left;
-    margin-left:1px;
-    padding:5px 0 0 0;
-    text-align: center;
-    color: #FFF;
-    border: none;
-}
-
-.botao{
     cursor: pointer;
 }

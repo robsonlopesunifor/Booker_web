@@ -1,0 +1,11 @@
+#foto{
+    width: 400px;
+    height: 482px;
+    padding: 10px;
+    float: left;
+    background-color: #333;
+}
+
+#foto_imagem{
+    width: 400px;
+}

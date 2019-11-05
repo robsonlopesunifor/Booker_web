@@ -1,0 +1,108 @@
+<div id="linha" (click)="mostrarLinha()" >
+<div id="estatus_da_linha" >
+    <app-celula 
+        [linha]="linha" 
+        [classe]="'linha'" 
+        [chave]="'linha'"
+        [ordem]="1" >
+    </app-celula>
+</div>
+<div id="board" >
+    <div class="altura_1" >
+        <app-celula *ngFor="let etapa of board"
+            [linha]="linha" 
+            [classe]="'board'"
+            [chave]="etapa"
+            [ordem]="1" >
+        </app-celula>
+    </div>
+    <div class="altura_2" >
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'pote'"
+            [chave]="'pote'"
+            [ordem]="1" >
+        </app-celula>
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'pote'"
+            [chave]="'pote_rodada'"
+            [ordem]="1" >
+        </app-celula>
+    </div>
+</div>
+<div id="jogadas" >
+    <div class="altura_1" >
+        <app-celula *ngFor="let ficha of fichas"
+            class="celula altura_1"
+            [linha]="linha" 
+            [classe]="'fichas'"
+            [chave]="ficha"
+            [ordem]="1" >
+        </app-celula>
+    </div>
+    <div class="altura_2" >
+        <app-celula *ngFor="let aposta of apostas"
+            class="celula"
+            [linha]="linha" 
+            [classe]="'aposta'" 
+            [chave]="aposta"
+            [ordem]="2" >
+        </app-celula>
+    </div>
+</div>
+<div id="analize" >
+    <div class="altura_1" > 
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'analize'"
+            [chave]="'ultimo_jogador_posicao'"
+            [ordem]="1" >
+        </app-celula>
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'analize'"
+            [chave]="'nome_acao'"
+            [ordem]="1" >
+        </app-celula>
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'analize'"
+            [chave]="'nome_bet'"
+            [ordem]="1" >
+        </app-celula>
+        <app-celula 
+            [linha]="linha" 
+            [classe]="'analize'"
+            [chave]="'nome_jogada'"
+            [ordem]="1" >
+        </app-celula>
+    </div>
+    <div class="altura_2" >
+        <app-celula 
+                [linha]="linha" 
+                [classe]="'analize'"
+                [chave]="'size_bet_blind'"
+                [ordem]="2" >
+        </app-celula>
+        <app-celula 
+                [linha]="linha" 
+                [classe]="'analize'"
+                [chave]="'size_bet_pote'"
+                [ordem]="2" >
+        </app-celula>
+        <app-celula 
+                [linha]="linha" 
+                [classe]="'analize'"
+                [chave]="'size_bet_vilao'"
+                [ordem]="2" >
+        </app-celula>
+        <app-celula 
+                [linha]="linha" 
+                [classe]="'analize'"
+                [chave]="'size_bet_fichas'"
+                [ordem]="2" >
+        </app-celula>
+    </div>
+</div>
+</div>

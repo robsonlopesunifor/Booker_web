@@ -32,9 +32,7 @@
                         (click)="enviar_cordenadas('jogadas',jogada.valor)" >
                         {{jogada.valor}}
                     </div>
-                    <div class="selecionado jogada"
-                        (click)="selecionar('jogadas',jogada.valor)"
-                        [style.background-color]="jogada.selecionado ? '#F3436D' : '#67605F'" ></div>
+                    <div class="selecionado jogada" [style.background-color]="jogada.selecionado ? '#F3436D' : '#67605F'" ></div>
                 </li>
             </ul>
             <ul class="coluna" >
@@ -50,7 +48,6 @@
                 </li>                
             </ul>
         </div>
-        <div id="largura" ></div>
     </div>
-    
+    <div id="reanalizar" (click)="reanalizarMaos()" ></div>
 </div>

@@ -1,0 +1,206 @@
+.celula{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.verde_claro{
+    color: #000;
+    background-color: rgb(146,232,115);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.verde_escuro{
+    color: #000;
+    background-color: rgb(123,227,86);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.vez_claro{
+    color: #000;
+    background-color: rgb(0,168,76);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.vez_escuro{
+    color: #000;
+    background-color: rgb(0,154,70);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.cinza{
+    color: #000;
+    background-color: #666;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.erro{
+    color: #000;
+    background-color: #F00;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+}
+
+.ouros{
+    color: #000;
+    background-color: rgb(255, 153, 100);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.copas{
+    color: #000;
+    background-color: rgb(190, 69, 66);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.espada{
+    color: #000;
+    background-color: rgb(141, 180, 226);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.paus{
+    color: #000;
+    background-color: rgb(126, 227, 87);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.sem_nape{
+    background-color: #666;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.pote{
+    background-color: #777;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 37px;
+    float: left;
+}
+
+.pote_rodada{
+    background-color: #888;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 38px;
+    float: left;
+}
+
+.linha_null{
+    height: 29px;
+    width: 10px;
+    background-color: cadetblue;
+    float: left;
+}
+
+.linha_nova{
+    height: 29px;
+    width: 10px;
+    background-color: chartreuse;
+    float: left;
+}
+
+.linha_descartavel{
+    height: 29px;
+    width: 10px;
+    background-color: crimson;
+    float: left;
+}
+
+.analize{
+    color:#000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 15px;
+    width: 42px;
+    float: left;
+}
+
+.analize_azul_claro{
+    background-color: #9ebfe6;
+}
+
+.analize_azul_escuro{
+    background-color: #6699ff;
+}
+
+.analize_vermelho_claro{
+    background-color: #da9694;
+}
+
+.analize_vermelho_escuro{
+    background-color: #e06666;
+}
+
+.analize_roxo_claro{
+    background-color: #9a8ac7;
+}
+
+.analize_roxo_escuro{
+    background-color:#8e7cc3;
+}
+
+.analize_cinza_escuro{
+    background-color: #666;
+}
+
+.analize_cinza_claro{
+    background-color: #7e7878;
+}
+
+.analize_null{
+    background-color: #b7b7b7;
+}
+

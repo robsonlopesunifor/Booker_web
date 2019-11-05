@@ -21,6 +21,10 @@ import { CaixaCabecarioComponent } from './painel/mapa/caixa-cabecario/caixa-cab
 import { SinalComponent } from './painel/mapa/caixa-tabela/sinal/sinal.component';
 import { HolecardsComponent } from './painel/mapa/caixa-tabela/tabela/holecards/holecards.component';
 import { TimelineComponent } from './painel/timeline/timeline.component';
+import { PlanilhaComponent } from './painel/planilha/planilha.component';
+import { LinhaComponent } from './painel/planilha/linha/linha.component';
+import { CelulaComponent } from './painel/planilha/linha/celula/celula.component';
+import { FotoComponent } from './painel/foto/foto.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import { TimelineComponent } from './painel/timeline/timeline.component';
     CaixaCabecarioComponent,
     SinalComponent,
     HolecardsComponent,
-    TimelineComponent
+    TimelineComponent,
+    PlanilhaComponent,
+    LinhaComponent,
+    CelulaComponent,
+    FotoComponent
   ],
   imports: [
     BrowserModule,

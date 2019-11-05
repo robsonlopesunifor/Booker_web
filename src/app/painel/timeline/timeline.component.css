@@ -71,7 +71,7 @@
 
 #timeline{
     width: 100px;
-    height: 433px;
+    height: 430px;
 }
 
 #mover{
@@ -106,6 +106,8 @@
     text-align: center;
 }
 
+
+
 #colunas{
     width: 100px;
     height: 412px;
@@ -113,21 +115,12 @@
 
 .coluna{
     width: 48px;
-    height: 410px;
+    height: 392px;
     padding: 0;
-    margin: 3px 1px 0 1px;
+    margin: 1px 1px 0 1px;
     list-style: none;
     float: left;
 }
-
-#largura{
-    width: 100px;
-    height: 16px;
-    padding-top: 4px;
-    background-color: darkmagenta;
-    text-align: center; 
-}
-
 
 .selecionado{
     width:20px;
@@ -152,4 +145,12 @@
 
 .jogada{
     height: 27px;
+}
+
+
+#reanalizar{
+    width: 100px;
+    height: 10px;
+    background-color: #F3436D;
+    cursor: pointer;
 }

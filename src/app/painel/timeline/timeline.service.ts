@@ -24,4 +24,12 @@ export class TimelineService {
         return this._http.get(url).pipe(map((resposta:Response) => <object>resposta ));
     }
 
+    reanalizarMaos(lista_maos:string[]):Observable<object>{	
+        var url = this._Url+'cientista_analizar';
+        var params = {'maos':lista_maos,}  
+        const headers = new HttpHeaders();
+        headers.append('Content-Type', 'application/json');
+        return this._http.put(url, params, {headers})
+                         .pipe(map((resposta:Response) => <object>resposta ));
+    }
 }

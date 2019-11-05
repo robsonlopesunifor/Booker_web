@@ -8,29 +8,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class MenuTopComponent implements OnInit {
 
-  @Output() enviar_data = new EventEmitter();
-  private info:Object = {carta:'AA',fonte:'20px',cor:true}
-  private telas:Object = [1,2]
-  private data:Object = {
-    ano:2019, 
-    mes:8, 
-    dia:22 
+  @Output() enviar_dados = new EventEmitter();
+
+  constructor() { } 
+
+  definiPainel(painel:string):void{
+    this.enviar_dados.emit(painel)
   }
-
-  constructor() { } //private MapaService:MapaService) { }
-
-  definirData():void{
-    var data_string:String = this.data['ano']+"-"+this.data['mes']+"-"+ this.data['dia'];
-    this.enviar_data.emit(data_string)
-  }
-
-  listarTelasDaData():void{
-    var data_string:String = this.data['ano']+"-"+this.data['mes']+"-"+ this.data['dia'];
-    //this.MapaService.numeroDeTelas(data_string)
-    //                      .subscribe((telas) => {this.telas = telas;
-    //                                            }); 
-  }
-
 
 
   ngOnInit() {
