@@ -1,0 +1,23 @@
+<div id="tabela" >
+    <div class="barra" ><app-barra-forca-relativa ></app-barra-forca-relativa></div>
+    <div class="barra" ><app-barra-forca-relativa ></app-barra-forca-relativa></div>
+    <div class="barra" >
+        <app-barra-forca-relativa [mao]="'full_house'" [fatia]="1" [lista_hole_cards]="lista_maos['full_house']" ></app-barra-forca-relativa>
+        <app-barra-forca-relativa [mao]="'full_house'" [fatia]="2" [lista_hole_cards]="lista_maos['full_house']" ></app-barra-forca-relativa>
+    </div>
+    <div class="barra" >
+        <app-barra-forca-relativa [mao]="'flush'" [fatia]="1" [lista_hole_cards]="lista_maos['flush']" ></app-barra-forca-relativa>
+        <app-barra-forca-relativa [mao]="'flush'" [fatia]="2" [lista_hole_cards]="lista_maos['flush']" ></app-barra-forca-relativa>
+    </div>
+    <div class="barra" >
+        <app-barra-forca-relativa [mao]="'street'" [fatia]="1" [lista_hole_cards]="lista_maos['street']" ></app-barra-forca-relativa>
+        <app-barra-forca-relativa [mao]="'street'" [fatia]="2" [lista_hole_cards]="lista_maos['street']" ></app-barra-forca-relativa>
+        <app-barra-forca-relativa [mao]="'street'" [fatia]="3" [lista_hole_cards]="lista_maos['street']" ></app-barra-forca-relativa>
+    </div>
+    <div class="barra" ><app-barra-forca-relativa ></app-barra-forca-relativa></div>
+    <div class="barra" ><app-barra-forca-relativa ></app-barra-forca-relativa></div>
+    <div class="barra" ><app-barra-forca-relativa [mao]="'par'" [lista_hole_cards]="lista_maos['par']" ></app-barra-forca-relativa></div>
+    <div class="barra" >
+        <app-barra-forca-relativa [mao]="'remanecente'" [lista_hole_cards]="lista_maos['remanecente']" ></app-barra-forca-relativa>
+    </div>
+</div>

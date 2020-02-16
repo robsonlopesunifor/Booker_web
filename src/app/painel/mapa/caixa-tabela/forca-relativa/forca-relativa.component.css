@@ -1,0 +1,16 @@
+#tabela{
+    width: 316px;
+    height: 316px;
+    background-color: #756d6d;
+    padding: 4px;
+}
+
+.barra{
+    height: 25px;
+    width: 301px;
+}
+
+.barra app-barra-forca-relativa{
+    float: left;
+    margin-right: 1px;
+}

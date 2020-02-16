@@ -1,0 +1,6 @@
+<div class="holecards"
+[style.background-color]="backgroud"
+[style.border-color]="holecard.heroi ? '#FFF' : backgroud " >
+<div style="float: left" class="letras" [style.color]="holecard.naipes[0] ? '#FFF' : '#000' " >{{holecard.texto[0]}}</div>
+<div style="float: right" class="letras" [style.color]="holecard.naipes[1] ? '#FFF' : '#000' " >{{holecard.texto[1]}}</div>
+</div>

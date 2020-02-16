@@ -25,6 +25,9 @@ import { PlanilhaComponent } from './painel/planilha/planilha.component';
 import { LinhaComponent } from './painel/planilha/linha/linha.component';
 import { CelulaComponent } from './painel/planilha/linha/celula/celula.component';
 import { FotoComponent } from './painel/foto/foto.component';
+import { ForcaRelativaComponent } from './painel/mapa/caixa-tabela/forca-relativa/forca-relativa.component';
+import { BarraForcaRelativaComponent } from './painel/mapa/caixa-tabela/forca-relativa/barra-forca-relativa/barra-forca-relativa.component';
+import { HoleCardsFrComponent } from './painel/mapa/caixa-tabela/forca-relativa/barra-forca-relativa/hole-cards-fr/hole-cards-fr.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { FotoComponent } from './painel/foto/foto.component';
     PlanilhaComponent,
     LinhaComponent,
     CelulaComponent,
-    FotoComponent
+    FotoComponent,
+    ForcaRelativaComponent,
+    BarraForcaRelativaComponent,
+    HoleCardsFrComponent
   ],
   imports: [
     BrowserModule,

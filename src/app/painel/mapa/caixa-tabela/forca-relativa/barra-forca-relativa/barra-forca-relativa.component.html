@@ -1,0 +1,8 @@
+<div class="barra"
+[style.width]="largura"
+[style.height]="altura"
+[style.background-color]="background" >
+    <app-hole-cards-fr 
+    *ngFor="let hole_card of holecards_por_fatia"
+    [holecard]="hole_card" ></app-hole-cards-fr>
+</div>
